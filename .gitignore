@@ -1,0 +1,12 @@
+# Local R and editor files
+.DS_Store
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+~$*
+
+# Course materials kept locally and excluded from the public repository
+# Basename rules apply in every directory.
+STOR-664-Fall2026-Project.pdf
+STOR_664_Fall2026_ScribedNotes.pdf

@@ -1,0 +1,95 @@
+Source: ISLR::Wage; official CRAN mirror data/Wage.rda
+Dimensions: 3000 11 
+Years: 2003 2004 2005 2006 2007 2008 2009 
+Age range: 18 80 
+Missing values in all variables:
+      year        age     maritl       race  education     region   jobclass 
+         0          0          0          0          0          0          0 
+    health health_ins    logwage       wage 
+         0          0          0          0 
+Raw, figure, and model samples: 3000 3000 3000 
+Maximum |logwage - log(wage)|: 0 
+Region counts:
+
+       1. New England    2. Middle Atlantic 3. East North Central 
+                    0                  3000                     0 
+4. West North Central     5. South Atlantic 6. East South Central 
+                    0                     0                     0 
+7. West South Central           8. Mountain            9. Pacific 
+                    0                     0                     0 
+Education counts:
+
+      1. < HS Grad         2. HS Grad    3. Some College    4. College Grad 
+               268                971                650                685 
+5. Advanced Degree 
+               426 
+Education medians of logwage:
+      1. < HS Grad         2. HS Grad    3. Some College    4. College Grad 
+          4.397940           4.544068           4.653213           4.778151 
+5. Advanced Degree 
+          4.954243 
+Education by jobclass counts:
+                    
+                     1. Industrial 2. Information
+  1. < HS Grad                 190             78
+  2. HS Grad                   636            335
+  3. Some College              342            308
+  4. College Grad              274            411
+  5. Advanced Degree           102            324
+Model residual degrees of freedom: 2986 
+Education joint partial F test:
+Analysis of Variance Table
+
+Model 1: logwage ~ a + I(a^2) + factor(year) + jobclass
+Model 2: logwage ~ a + I(a^2) + factor(year) + jobclass + education
+  Res.Df    RSS Df Sum of Sq      F    Pr(>F)    
+1   2990 317.21                                  
+2   2986 256.78  4    60.431 175.68 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Primary college versus high school contrast:
+                          Estimate Std. Error  t value     Pr(>|t|)
+education4. College Grad 0.2282377 0.01494584 15.27099 9.403472e-51
+                             2.5 %    97.5 %
+education4. College Grad 0.1989325 0.2575429
+Geometric mean percentage difference and interval:
+estimate.education4. College Grad                                   
+                         25.63839                          22.00996 
+                                  
+                         29.37473 
+Primary contrast without jobclass:
+                          Estimate Std. Error  t value     Pr(>|t|)
+education4. College Grad 0.2372732  0.0146937 16.14796 2.655875e-56
+Full model summary:
+
+Call:
+lm(formula = logwage ~ a + I(a^2) + factor(year) + jobclass + 
+    education, data = model_data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.71761 -0.15681  0.00523  0.16928  1.15349 
+
+Coefficients:
+                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  4.507e+00  1.624e-02 277.508  < 2e-16 ***
+a                            8.277e-03  5.163e-04  16.032  < 2e-16 ***
+I(a^2)                      -4.309e-04  3.272e-05 -13.170  < 2e-16 ***
+factor(year)2004             3.087e-02  1.862e-02   1.658  0.09738 .  
+factor(year)2005             3.895e-02  1.900e-02   2.050  0.04046 *  
+factor(year)2006             8.288e-02  1.969e-02   4.209 2.64e-05 ***
+factor(year)2007             5.498e-02  1.978e-02   2.779  0.00549 ** 
+factor(year)2008             6.490e-02  1.975e-02   3.286  0.00103 ** 
+factor(year)2009             7.818e-02  1.974e-02   3.961 7.64e-05 ***
+jobclass2. Information       3.586e-02  1.131e-02   3.170  0.00154 ** 
+education1. < HS Grad       -1.109e-01  2.027e-02  -5.473 4.78e-08 ***
+education3. Some College     1.152e-01  1.496e-02   7.703 1.79e-14 ***
+education4. College Grad     2.282e-01  1.495e-02  15.271  < 2e-16 ***
+education5. Advanced Degree  3.902e-01  1.775e-02  21.989  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2932 on 2986 degrees of freedom
+Multiple R-squared:  0.308,	Adjusted R-squared:  0.305 
+F-statistic: 102.2 on 13 and 2986 DF,  p-value: < 2.2e-16
+
