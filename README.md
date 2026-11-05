@@ -2,6 +2,11 @@
 
 This repository contains the STOR 664 course project on education and wages using ISLR::Wage. The active proposal was revised after exploratory data review and instructor feedback. It is an observational study of conditional associations.
 
+## Team members
+
+- Bangyu Yan ([@bangyuyan17-ui](https://github.com/bangyuyan17-ui))
+- Jialiang Yao ([@Y36366363](https://github.com/Y36366363))
+
 ## Current research question
 
 Does the college-versus-high-school difference in mean log wage vary between Industrial and Information job classes among workers of comparable ages and recorded years?
