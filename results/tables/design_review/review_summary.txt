@@ -1,0 +1,197 @@
+EXPLORATORY DESIGN REVIEW
+All findings inform a revised plan; no preregistration or untouched confirmatory sample is claimed.
+Raw dimensions: 3000 11  Missing: 0  Exact matching measured profiles beyond first: 3 
+Identical measured profiles do not establish duplicate people; all records retained.
+Main interaction design matrix rank/columns: 18 18 
+Education/jobclass descriptive chi-square: 282.6433  df: 4  p: 5.998601e-60  Cramer V: 0.3069437 
+Minimum education by jobclass cell: 78  Minimum education by jobclass by year cell: 6 
+Cook distance 4/n flags: 158  of  3000  retained in primary model.
+           education industrial_n information_n total information_percent
+1       1. < HS Grad          190            78   268            29.10448
+2         2. HS Grad          636           335   971            34.50051
+3    3. Some College          342           308   650            47.38462
+4    4. College Grad          274           411   685            60.00000
+5 5. Advanced Degree          102           324   426            76.05634
+                          model    n parameters columns R_squared
+1                    unadjusted 3000          5       5 0.2261500
+2                      age_year 3000         13      13 0.3056620
+3                  job_additive 3000         14      14 0.3079905
+4               job_interaction 3000         18      18 0.3103768
+5        age_linear_interaction 3000         17      17 0.3080111
+6     age_quadratic_interaction 3000         21      21 0.3120253
+7 extra_covariates_illustration 3000         23      23 0.3913179
+  adjusted_R_squared
+1          0.2251165
+2          0.3028725
+3          0.3049778
+4          0.3064454
+5          0.3042994
+6          0.3074065
+7          0.3868198
+                                                                                                formula
+1                                                                                   logwage ~ education
+2                                                       logwage ~ education + a + I(a^2) + factor(year)
+3                                            logwage ~ education + a + I(a^2) + factor(year) + jobclass
+4                                            logwage ~ education * jobclass + a + I(a^2) + factor(year)
+5                                                       logwage ~ education * a + I(a^2) + factor(year)
+6                                                     logwage ~ education * (a + I(a^2)) + factor(year)
+7 logwage ~ education + a + I(a^2) + factor(year) + jobclass +      race + maritl + health + health_ins
+                                 comparison restrictions classical_F
+1   Four education by jobclass interactions            4    2.579642
+2 Four education by linear age interactions            4    2.531613
+3 Eight education by age curve interactions            8    3.444244
+   classical_p HC3_Wald_chisq HC3_asymptotic_p
+1 0.0356035505       8.184506     0.0850485751
+2 0.0385716083       9.555345     0.0486223603
+3 0.0005898084      28.929813     0.0003262175
+                           model
+1                     unadjusted
+2                     unadjusted
+3                       age_year
+4                       age_year
+5                   job_additive
+6                   job_additive
+7  extra_covariates_illustration
+8  extra_covariates_illustration
+9                job_interaction
+10               job_interaction
+11               job_interaction
+12               job_interaction
+13               job_interaction
+14               job_interaction
+                                          contrast                   method
+1                        College minus high school           OLS t interval
+2                        College minus high school HC3 normal approximation
+3                        College minus high school           OLS t interval
+4                        College minus high school HC3 normal approximation
+5                        College minus high school           OLS t interval
+6                        College minus high school HC3 normal approximation
+7                        College minus high school           OLS t interval
+8                        College minus high school HC3 normal approximation
+9             Industrial college minus high school           OLS t interval
+10            Industrial college minus high school HC3 normal approximation
+11           Information college minus high school           OLS t interval
+12           Information college minus high school HC3 normal approximation
+13 Difference of gaps Information minus Industrial           OLS t interval
+14 Difference of gaps Information minus Industrial HC3 normal approximation
+     estimate         se       lower      upper      p_value exp_estimate
+1  0.25078529 0.01545008  0.22049144 0.28107913 7.464873e-57     1.285034
+2  0.25078529 0.01568719  0.22003897 0.28153160 1.583599e-57     1.285034
+3  0.23727321 0.01469370  0.20846242 0.26608400 2.655875e-56     1.267787
+4  0.23727321 0.01506849  0.20773952 0.26680691 7.279851e-56     1.267787
+5  0.22823769 0.01494584  0.19893251 0.25754287 9.403472e-51     1.256384
+6  0.22823769 0.01532173  0.19820765 0.25826773 3.481415e-50     1.256384
+7  0.19663566 0.01430040  0.16859599 0.22467532 9.315614e-42     1.217300
+8  0.19663566 0.01432218  0.16856469 0.22470662 6.764882e-43     1.217300
+9  0.21499425 0.02123558  0.17335638 0.25663212 1.037670e-23     1.239855
+10 0.21499425 0.02239860  0.17109379 0.25889471 8.107262e-22     1.239855
+11 0.24612331 0.02163310  0.20370600 0.28854063 2.173884e-29     1.279057
+12 0.24612331 0.02169540  0.20360112 0.28864551 7.898134e-30     1.279057
+13 0.03112906 0.03034259 -0.02836547 0.09062360 3.050127e-01     1.031619
+14 0.03112906 0.03131143 -0.03024020 0.09249833 3.201372e-01     1.031619
+   exp_lower exp_upper
+1  1.2466893  1.324558
+2  1.2461253  1.325158
+3  1.2317826  1.304845
+4  1.2308925  1.305788
+5  1.2200996  1.293747
+6  1.2192155  1.294685
+7  1.1836418  1.251916
+8  1.1836048  1.251955
+9  1.1892899  1.292570
+10 1.1866020  1.295497
+11 1.2259377  1.334479
+12 1.2258091  1.334619
+13 0.9720330  1.094857
+14 0.9702125  1.096911
+                              model
+1              main_job_interaction
+2              main_job_interaction
+3                         age25to64
+4                         age25to64
+5                   additional_race
+6                   additional_race
+7                         cubic_age
+8                         cubic_age
+9     education_specific_age_curves
+10    education_specific_age_curves
+11          job_specific_age_curves
+12          job_specific_age_curves
+13 exclude_Cook_flagged_stress_test
+14 exclude_Cook_flagged_stress_test
+                                          contrast                   method
+1  Difference of gaps Information minus Industrial           OLS t interval
+2  Difference of gaps Information minus Industrial HC3 normal approximation
+3  Difference of gaps Information minus Industrial           OLS t interval
+4  Difference of gaps Information minus Industrial HC3 normal approximation
+5  Difference of gaps Information minus Industrial           OLS t interval
+6  Difference of gaps Information minus Industrial HC3 normal approximation
+7  Difference of gaps Information minus Industrial           OLS t interval
+8  Difference of gaps Information minus Industrial HC3 normal approximation
+9  Difference of gaps Information minus Industrial           OLS t interval
+10 Difference of gaps Information minus Industrial HC3 normal approximation
+11 Difference of gaps Information minus Industrial           OLS t interval
+12 Difference of gaps Information minus Industrial HC3 normal approximation
+13 Difference of gaps Information minus Industrial           OLS t interval
+14 Difference of gaps Information minus Industrial HC3 normal approximation
+     estimate         se       lower      upper   p_value exp_estimate
+1  0.03112906 0.03034259 -0.02836547 0.09062360 0.3050127     1.031619
+2  0.03112906 0.03131143 -0.03024020 0.09249833 0.3201372     1.031619
+3  0.04016489 0.03142713 -0.02145842 0.10178821 0.2013464     1.040982
+4  0.04016489 0.03275179 -0.02402744 0.10435723 0.2200701     1.040982
+5  0.02801739 0.03036672 -0.03152447 0.08755926 0.3562722     1.028414
+6  0.02801739 0.03131715 -0.03336309 0.08939788 0.3709827     1.028414
+7  0.02974831 0.03025491 -0.02957431 0.08907093 0.3255615     1.030195
+8  0.02974831 0.03127692 -0.03155333 0.09104995 0.3415402     1.030195
+9  0.02749930 0.03031358 -0.03193842 0.08693702 0.3643952     1.027881
+10 0.02749930 0.03128402 -0.03381626 0.08881485 0.3793902     1.027881
+11 0.03393152 0.03036815 -0.02561315 0.09347619 0.2639396     1.034514
+12 0.03393152 0.03145276 -0.02771477 0.09557780 0.2806730     1.034514
+13 0.02844543 0.02413770 -0.01888387 0.07577474 0.2387106     1.028854
+14 0.02844543 0.02470955 -0.01998439 0.07687526 0.2496533     1.028854
+   exp_lower exp_upper    n
+1  0.9720330  1.094857 3000
+2  0.9702125  1.096911 3000
+3  0.9787702  1.107149 2753
+4  0.9762589  1.109997 2753
+5  0.9689672  1.091507 3000
+6  0.9671873  1.093516 3000
+7  0.9708587  1.093158 3000
+8  0.9689393  1.095324 3000
+9  0.9685662  1.090828 3000
+10 0.9667491  1.092878 3000
+11 0.9747121  1.097984 3000
+12 0.9726658  1.100294 3000
+13 0.9812933  1.078720 2842
+14 0.9802140  1.079907 2842
+
+Session information
+R version 4.4.1 (2024-06-14)
+Platform: aarch64-apple-darwin20
+Running under: macOS 26.6.2
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/lib/libRblas.0.dylib 
+LAPACK: /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.0
+
+locale:
+[1] C.UTF-8/C.UTF-8/C.UTF-8/C/C.UTF-8/C.UTF-8
+
+time zone: America/New_York
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] ggplot2_3.5.1
+
+loaded via a namespace (and not attached):
+ [1] vctrs_0.6.5       cli_3.6.3         rlang_1.1.4       generics_0.1.3   
+ [5] textshaping_0.4.0 labeling_0.4.3    glue_1.8.0        zoo_1.8-12       
+ [9] colorspace_2.1-1  ragg_1.4.0        scales_1.3.0      fansi_1.0.6      
+[13] grid_4.4.1        munsell_0.5.1     tibble_3.2.1      lifecycle_1.0.4  
+[17] compiler_4.4.1    dplyr_1.1.4       sandwich_3.1-1    pkgconfig_2.0.3  
+[21] farver_2.1.2      systemfonts_1.1.0 lattice_0.22-6    R6_2.5.1         
+[25] tidyselect_1.2.1  utf8_1.2.4        pillar_1.9.0      magrittr_2.0.3   
+[29] tools_4.4.1       withr_3.0.2       gtable_0.3.5     

@@ -1,0 +1,12 @@
+"variable","storage","observed_values","missing"
+"year","integer",7,0
+"age","integer",61,0
+"maritl","factor",5,0
+"race","factor",4,0
+"education","factor",5,0
+"region","factor",1,0
+"jobclass","factor",2,0
+"health","factor",2,0
+"health_ins","factor",2,0
+"logwage","numeric",508,0
+"wage","numeric",508,0

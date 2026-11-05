@@ -1,0 +1,30 @@
+"variable","level","n","percent"
+"maritl","1. Never Married",648,21.6
+"maritl","2. Married",2074,69.1333333333333
+"maritl","3. Widowed",19,0.633333333333333
+"maritl","4. Divorced",204,6.8
+"maritl","5. Separated",55,1.83333333333333
+"race","1. White",2480,82.6666666666667
+"race","2. Black",293,9.76666666666667
+"race","3. Asian",190,6.33333333333333
+"race","4. Other",37,1.23333333333333
+"education","1. < HS Grad",268,8.93333333333333
+"education","2. HS Grad",971,32.3666666666667
+"education","3. Some College",650,21.6666666666667
+"education","4. College Grad",685,22.8333333333333
+"education","5. Advanced Degree",426,14.2
+"region","1. New England",0,0
+"region","2. Middle Atlantic",3000,100
+"region","3. East North Central",0,0
+"region","4. West North Central",0,0
+"region","5. South Atlantic",0,0
+"region","6. East South Central",0,0
+"region","7. West South Central",0,0
+"region","8. Mountain",0,0
+"region","9. Pacific",0,0
+"jobclass","1. Industrial",1544,51.4666666666667
+"jobclass","2. Information",1456,48.5333333333333
+"health","1. <=Good",858,28.6
+"health","2. >=Very Good",2142,71.4
+"health_ins","1. Yes",2083,69.4333333333333
+"health_ins","2. No",917,30.5666666666667

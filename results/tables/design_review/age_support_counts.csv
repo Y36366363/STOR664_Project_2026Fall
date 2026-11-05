@@ -1,0 +1,61 @@
+"education","jobclass","age_band","Freq"
+"2. HS Grad","1. Industrial","18–24",57
+"1. < HS Grad","1. Industrial","18–24",22
+"3. Some College","1. Industrial","18–24",29
+"4. College Grad","1. Industrial","18–24",9
+"5. Advanced Degree","1. Industrial","18–24",0
+"2. HS Grad","2. Information","18–24",24
+"1. < HS Grad","2. Information","18–24",3
+"3. Some College","2. Information","18–24",18
+"4. College Grad","2. Information","18–24",13
+"5. Advanced Degree","2. Information","18–24",0
+"2. HS Grad","1. Industrial","25–34",147
+"1. < HS Grad","1. Industrial","25–34",37
+"3. Some College","1. Industrial","25–34",92
+"4. College Grad","1. Industrial","25–34",56
+"5. Advanced Degree","1. Industrial","25–34",21
+"2. HS Grad","2. Information","25–34",48
+"1. < HS Grad","2. Information","25–34",17
+"3. Some College","2. Information","25–34",76
+"4. College Grad","2. Information","25–34",98
+"5. Advanced Degree","2. Information","25–34",59
+"2. HS Grad","1. Industrial","35–44",172
+"1. < HS Grad","1. Industrial","35–44",67
+"3. Some College","1. Industrial","35–44",98
+"4. College Grad","1. Industrial","35–44",74
+"5. Advanced Degree","1. Industrial","35–44",31
+"2. HS Grad","2. Information","35–44",89
+"1. < HS Grad","2. Information","35–44",23
+"3. Some College","2. Information","35–44",82
+"4. College Grad","2. Information","35–44",131
+"5. Advanced Degree","2. Information","35–44",107
+"2. HS Grad","1. Industrial","45–54",181
+"1. < HS Grad","1. Industrial","45–54",35
+"3. Some College","1. Industrial","45–54",88
+"4. College Grad","1. Industrial","45–54",89
+"5. Advanced Degree","1. Industrial","45–54",26
+"2. HS Grad","2. Information","45–54",105
+"1. < HS Grad","2. Information","45–54",18
+"3. Some College","2. Information","45–54",85
+"4. College Grad","2. Information","45–54",106
+"5. Advanced Degree","2. Information","45–54",92
+"2. HS Grad","1. Industrial","55–64",62
+"1. < HS Grad","1. Industrial","55–64",23
+"3. Some College","1. Industrial","55–64",32
+"4. College Grad","1. Industrial","55–64",40
+"5. Advanced Degree","1. Industrial","55–64",22
+"2. HS Grad","2. Information","55–64",59
+"1. < HS Grad","2. Information","55–64",10
+"3. Some College","2. Information","55–64",42
+"4. College Grad","2. Information","55–64",55
+"5. Advanced Degree","2. Information","55–64",58
+"2. HS Grad","1. Industrial","65–80",17
+"1. < HS Grad","1. Industrial","65–80",6
+"3. Some College","1. Industrial","65–80",3
+"4. College Grad","1. Industrial","65–80",6
+"5. Advanced Degree","1. Industrial","65–80",2
+"2. HS Grad","2. Information","65–80",10
+"1. < HS Grad","2. Information","65–80",7
+"3. Some College","2. Information","65–80",5
+"4. College Grad","2. Information","65–80",8
+"5. Advanced Degree","2. Information","65–80",8

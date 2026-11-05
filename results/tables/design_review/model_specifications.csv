@@ -1,0 +1,8 @@
+"model","n","parameters","columns","R_squared","adjusted_R_squared","formula"
+"unadjusted",3000,5,5,0.226150042702349,0.225116520221817,"logwage ~ education"
+"age_year",3000,13,13,0.305661967863739,0.302872528163158,"logwage ~ education + a + I(a^2) + factor(year)"
+"job_additive",3000,14,14,0.307990528465293,0.30497776117462,"logwage ~ education + a + I(a^2) + factor(year) + jobclass"
+"job_interaction",3000,18,18,0.310376820520313,0.30644536711617,"logwage ~ education * jobclass + a + I(a^2) + factor(year)"
+"age_linear_interaction",3000,17,17,0.30801107717963,0.304299436963362,"logwage ~ education * a + I(a^2) + factor(year)"
+"age_quadratic_interaction",3000,21,21,0.31202531755992,0.307406487869151,"logwage ~ education * (a + I(a^2)) + factor(year)"
+"extra_covariates_illustration",3000,23,23,0.391317945383268,0.386819791133497,"logwage ~ education + a + I(a^2) + factor(year) + jobclass +      race + maritl + health + health_ins"

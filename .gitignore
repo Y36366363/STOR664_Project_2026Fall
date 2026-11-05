@@ -10,3 +10,6 @@
 # Basename rules apply in every directory.
 STOR-664-Fall2026-Project.pdf
 STOR_664_Fall2026_ScribedNotes.pdf
+
+# Local design notes excluded from future commits
+Wage_design_review_中文说明.md

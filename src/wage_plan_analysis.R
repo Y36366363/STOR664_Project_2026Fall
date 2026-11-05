@@ -1,10 +1,11 @@
+# Historical first-plan analysis. For the revised main question run src/02_wage_design_review.R.
 # Reproduce the Wage data checks and Plan figure.
 # Run from the project root: Rscript src/wage_plan_analysis.R data/raw/Wage.rda
 # Requires R and ggplot2. ISLR is optional; otherwise data are downloaded
 # from the CRAN mirror on GitHub. The original source is documented in README.
 args <- commandArgs(trailingOnly = TRUE)
 script_arg <- grep('^--file=', commandArgs(), value = TRUE)
-project_root <- if (length(script_arg)) dirname(dirname(normalizePath(sub('^--file=', '', script_arg[1])))) else getwd()
+project_root <- if (length(script_arg)) dirname(dirname(normalizePath(gsub('~+~', ' ', sub('^--file=', '', script_arg[1]), fixed = TRUE)))) else getwd()
 out_dir <- file.path(project_root, 'results')
 dir.create(file.path(out_dir, 'figures'), recursive = TRUE, showWarnings = FALSE)
 dir.create(file.path(out_dir, 'tables'), recursive = TRUE, showWarnings = FALSE)

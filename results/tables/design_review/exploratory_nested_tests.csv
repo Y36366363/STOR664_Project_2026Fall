@@ -1,0 +1,4 @@
+"comparison","restrictions","classical_F","classical_p","HC3_Wald_chisq","HC3_asymptotic_p"
+"Four education by jobclass interactions",4,2.5796417231214,0.0356035504804854,8.1845061975407,0.0850485750849677
+"Four education by linear age interactions",4,2.53161317262975,0.0385716083405391,9.55534544979324,0.0486223602689028
+"Eight education by age curve interactions",8,3.44424352173981,0.00058980840110008,28.9298125919945,0.000326217533753284
