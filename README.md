@@ -2,6 +2,11 @@
 
 This repository contains work in progress for the STOR 664 course project. The current candidate investigates educational attainment and wages using the ISLR Wage dataset. Dataset selection and the draft plan remain subject to team review.
 
+## Team members
+
+  —— Bangyu Yan (Github: bangyuyan17-ui)
+  —— Jialiang Yao (Github: Y36366363)
+
 ## Research question
 
 How do log wages differ across educational attainment groups after adjusting for age, recorded year, and broad job class? The primary comparison is college graduates versus high school graduates. The analysis targets conditional associations rather than causal returns to education.
