@@ -4,7 +4,7 @@ This repository contains work in progress for the STOR 664 course project. The c
 
 ## Team members
 
-  —— Bangyu Yan (Github: bangyuyan17-ui)
+  —— Bangyu Yan (Github: bangyuyan17-ui)  
   —— Jialiang Yao (Github: Y36366363)
 
 ## Research question
